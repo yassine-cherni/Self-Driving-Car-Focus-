@@ -1,4 +1,4 @@
-import cv2
+import 
 import numpy as np
 
 def detect_lanes(image):
