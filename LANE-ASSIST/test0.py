@@ -1,5 +1,5 @@
-import cv
-import numpy as np
+import cv2
+import numpy as 
 
 def detect_lanes(image):
     # Convert image to grayscale
