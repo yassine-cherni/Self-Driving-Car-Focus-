@@ -14,3 +14,4 @@ import glob
 from tqdm.notebook import trange, tqdm
 import warnings
 warnings.filterwarnings('ignore')
+# i will use yolov8n.pt
