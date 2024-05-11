@@ -6,3 +6,7 @@
 ![1475776461_f9adc2fee9_o](https://github.com/yassine-cherni/Self-Driving-Car-Focus-/assets/125700497/bb307839-7625-4124-a15e-d20d393074a8)
 https://www.youtube.com/watch?v=2CIxM7x-Clc
 # 2.VOICE ASSISTANCE 
+proof of concept 
+## 2.1.ANN Architecture : 81% accuracy 
+## 2.2.CNN Architecture : 90% accuracy 
+## 2.3.RNN-LSTM Architecture : 99% accuracy 
