@@ -1,0 +1,53 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPy6iFgq4VQnTxuKQi0Tf/9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yassine-cherni/Self-Driving-Car-Focus-/blob/main/model\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "h8mAJOZFF-5_"
+      },
+      "outputs": [],
+      "source": [
+        "# Build from YAML and transfer weights\n",
+        "Final_model = YOLO('yolov8n.yaml').load('yolov8n.pt')\n",
+        "\n",
+        "# Training The Final Model\n",
+        "Result_Final_model = Final_model.train(\n",
+        "    data=\"/content/drive/MyDrive/Traffic/data.yaml\",\n",
+        "    epochs=100,\n",
+        "    imgsz=416,\n",
+        "    batch=64,\n",
+        "    lr0=0.0001,\n",
+        "    dropout=0.15,\n",
+        "    device=0\n",
+        ")"
+      ]
+    }
+  ]
+}
